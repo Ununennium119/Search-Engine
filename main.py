@@ -147,7 +147,7 @@ def search_docs():
 
 def build_tries():
     for i in range(10):
-        doc = open(f"doc{i + 1:02}.txt", mode='r', encoding="utf8")
+        doc = open(f"docs/doc{i + 1:02}.txt", mode='r', encoding="utf8")
         trie = Trie(False)
         reversed_trie = Trie(True)
         for word in doc.readline().split(' '):
